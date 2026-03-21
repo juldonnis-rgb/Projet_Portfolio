@@ -51,7 +51,7 @@ h2{
 .photos{
     display:flex;
     height: 80vh;
-    width:90vh;
+    width:70vh;
     background-image: url("profil.jpg");
     background-repeat:no-repeat;
     border-radius: 20px;
