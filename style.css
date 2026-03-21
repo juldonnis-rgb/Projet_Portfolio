@@ -25,6 +25,11 @@ header{
 nav{
     display:flex; 
 }
+nav ul {
+    display: flex;
+    gap: 15px;
+    
+}
 li{
     display:inline-block;
 }
@@ -32,11 +37,27 @@ li a{
     text-decoration: none;
     color: var(--text-color);
 }
+li button{
+    background-color: skyblue;
+    border-radius:20px;
+    width:50px;
+    color: var(--text-color);
 
-nav ul {
-    display: flex;
-    gap: 15px;
-    
 }
+h2{
+    display:flex;
+    justify-content:center;
+}
+.photos{
+    display:flex;
+    height: 80vh;
+    width:90vh;
+    background-image: url("profil.jpg");
+    background-repeat:no-repeat;
+    border-radius: 20px;
+    margin:15px;
+}
+
+
 
 
