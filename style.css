@@ -46,12 +46,22 @@ li a{
     text-decoration: none;
     color: #D9D9D9;
 }
+li :hover{
+    color: #D3A03E;
+    transition: all 0.3 ease-in-out;
+}
 li button{
     background-color: #D3A03E;
     border-radius:20px;
     width:50px;
     color: #D3A03E;
     font-weight: bold;
+
+}
+.btn :hover{
+    background-color:#2d3b4d;
+    border-radius:20px;
+    width:50px;
 
 }
 
@@ -71,7 +81,6 @@ li button{
     height: auto;
     margin:20px;
     border-radius:40px;
-
     display:flex;
     justify-content: space-around;
     background: var(--background-color);
@@ -83,20 +92,32 @@ li button{
 }
 h2{
     color: #ffffff;
-    font-size: clamp(2rem, 10vw, 4rem); 
+    font-size: clamp(1.5rem, 10vw, 5rem); 
     font-weight: 900;
     letter-spacing: -4px;      
     line-height: 0.6;         
     margin-top:20px;
+    display: flex;
+    justify-content:center;
 }
+
 h3{
-    font-size:clamp(1rem, 5vw, 2rem);
-    font-weight: 900;
+    color: #FFFFFF;
+    font-size: clamp(1rem, 5vw, 2rem); 
+    font-weight: 800;
+    letter-spacing: -2px;      
+    line-height: 0.6;         
+    margin-top:40px;
+}
+
+h4{
+    font-size:clamp(1rem, 3vw, 1.5rem);
     letter-spacing: -1px;
     color: #D3A03E;
     
 }
-h4{
+h5{
+    font-size:clamp(1rem,2vw,1rem);
     color: #ffffff;
 }
 
