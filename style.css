@@ -11,7 +11,7 @@
     --text-color: #EDF1FF;
 }
 body{
-    background: url('background.jpg');
+    background: url('background.png');
     background-repeat:no-repeat;
     background-size: cover;
 
