@@ -86,7 +86,7 @@ li button{
     justify-content: space-around;
     background: var(--background-color);
 }
-h2{
+.text h2{
     color: var(--text-color);
     font-size: clamp(1.5rem, 10vw, 5rem); 
     font-weight: 900;
@@ -97,7 +97,7 @@ h2{
     justify-content:center;
 }
 
-h3{
+.text h3{
     color: var(--text-color);
     font-size: clamp(1rem, 5vw, 2rem); 
     font-weight: 800;
@@ -106,13 +106,13 @@ h3{
     margin-top:60px;
 }
 
-h4{
+.text h4{
     font-size:clamp(1rem, 3vw, 1.5rem);
     letter-spacing: -1px;
     color: #D3A03E;
     
 }
-h5{
+.text h5{
     font-size:clamp(1rem,2vw,1rem);
     color: var(--text-color);
 }
