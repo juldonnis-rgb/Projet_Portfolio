@@ -14,6 +14,7 @@ body{
     background: url('background.png');
     background-repeat:no-repeat;
     background-size: cover;
+    height: 300vh;
 
     
 }
@@ -116,23 +117,63 @@ li button{
     font-size:clamp(1rem,2vw,1rem);
     color: var(--text-color);
 }
-.projects{
+.title_projects{
+    width:auto;
+    height: auto;
+    border-radius:40px;
+    padding: 20px;
+    display: flex;
+    justify-content:space-around;
+    background-color: var(--background-color);
+
+    
+} 
+.title_1{
+    color: #ffffff;
+    display: flex;
+    margin-top:100px;
+     font-size: clamp(1rem, 5vw, 2rem); 
+    font-weight: 800;
+    letter-spacing: -2px; 
+    color: var(--text-color);
+   
+
+}
+.title_2{
+    color: #ffffff;
+    display: flex;
+    margin-top:100px;
+     font-size: clamp(1rem, 5vw, 2rem); 
+    font-weight: 800;
+    letter-spacing: -2px; 
+    color: var(--text-color);
+}
+.title_3{
+    color: #ffffff;
+    display: flex;
+    margin-top:100px;
+     font-size: clamp(1rem, 5vw, 2rem); 
+    font-weight: 800;
+    letter-spacing: -2px; 
+    color: var(--text-color);
+
+}
+ .box{ 
     width:auto;
     height: 80vh;
-    margin:10px;
     border-radius:40px;
     display:flex;
-    justify-content:space-around;
-    align-items: center;
+    justify-content: space-around;
+    align-items:center;
     background: var(--background-color);
 }
 .box_1{
     display:grid;
     height:50vh;
     width:45vh;
-    
     background-color: #ffffff;
-    display:grid;                
+    margin-top:100px;
+    justify-content:center;
     align-items:center;
     backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -143,10 +184,8 @@ li button{
     display:grid;
     height:50vh;
     width:45vh;
-    
-    background-color: #ffffff;
-    display:grid;                
-    align-items:center;
+    background-color: #ffffff;              
+    margin-top:100px;
     backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 30px
@@ -155,15 +194,14 @@ li button{
     display:grid;
     height:50vh;
     width:45vh;
-    
-    background-color: #ffffff;
-    display:grid;                
-    align-items:center;
+    background-color: #ffffff;                
+    margin-top:100px;
     backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 30px
 
 }
+
 
 
 
