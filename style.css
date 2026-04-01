@@ -117,41 +117,38 @@ li button{
     font-size:clamp(1rem,2vw,1rem);
     color: var(--text-color);
 }
-.title_projects{
+.title_stack{
     width:auto;
     height: auto;
-    border-radius:40px;
-    padding: 20px;
     display: flex;
     justify-content:space-around;
     background-color: var(--background-color);
-
-    
 } 
-.title_1{
+.stack_1{
     color: #ffffff;
     display: flex;
-    margin-top:100px;
-     font-size: clamp(1rem, 5vw, 2rem); 
+    margin-top: 25px;
+    font-size: clamp(1rem, 5vw, 2rem); 
     font-weight: 800;
     letter-spacing: -2px; 
     color: var(--text-color);
    
 
 }
-.title_2{
+.stack_2{
     color: #ffffff;
     display: flex;
-    margin-top:100px;
-     font-size: clamp(1rem, 5vw, 2rem); 
+    margin-top:25px;
+    font-size: clamp(1rem, 5vw, 2rem); 
     font-weight: 800;
     letter-spacing: -2px; 
     color: var(--text-color);
+   
 }
-.title_3{
+.stack_3{
     color: #ffffff;
     display: flex;
-    margin-top:100px;
+    margin-top:25px;
      font-size: clamp(1rem, 5vw, 2rem); 
     font-weight: 800;
     letter-spacing: -2px; 
@@ -166,44 +163,56 @@ li button{
     justify-content: space-around;
     align-items:center;
     background: var(--background-color);
+     
 }
 .box_1{
     display:grid;
     height:50vh;
     width:45vh;
     background-color: #ffffff;
-    margin-top:100px;
-    justify-content:center;
-    align-items:center;
     backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 30px
-
+    border-radius: 30px;
+    padding:20px;
+   
+    
 }
+.title_1{
+    display:flex;
+    
+    
+}
+
 .box_2{
     display:grid;
     height:50vh;
     width:45vh;
     background-color: #ffffff;              
-    margin-top:100px;
     backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 30px
+    border-radius: 30px;
+    padding:20px;
+    
+}
+.title_2{
+    display:flex;
+    justify-content: center;
 }
 .box_3{
     display:grid;
     height:50vh;
     width:45vh;
-    background-color: #ffffff;                
-    margin-top:100px;
+    background-color: #ffffff;               
     backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 30px
+    border-radius: 30px;
+    padding:20px;
 
 }
-
-
-
+.title_3{
+    display:flex;
+    justify-content: center;
+}
 
 
 
