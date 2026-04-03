@@ -459,3 +459,24 @@ footer {
         padding: 25px;
     }
 }
+/* Ajoute ceci ou vérifie dans ton fichier style.css */
+.input-flex-row {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.field-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1; /* Permet aux champs de prendre toute la largeur disponible */
+}
+
+/* Sur mobile, on empile tout */
+@media (max-width: 768px) {
+    .input-flex-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
