@@ -103,7 +103,7 @@ li button{
     font-weight: 800;
     letter-spacing: -2px;      
     line-height: 0.6;         
-    margin-top:40px;
+    
 }
 
 .text h4{
@@ -186,7 +186,6 @@ li button{
     font-weight: 600;
 }
 
-
 .project-link {
     text-decoration: none;
     color: #ffffff;
@@ -199,3 +198,26 @@ li button{
     color: #D3A03E;
 }
 
+/* Ajustement spécifique pour les cartes de compétences */
+.skill-card {
+    min-height: 350px; /* Un peu plus court que les projets */
+    cursor: default; /* On n'a pas forcément besoin de cliquer dessus */
+}
+
+.skill-card:hover {
+    border-color: #D3A03E;
+    transform: scale(1.02); /* Un effet de zoom léger au lieu du soulèvement */
+}
+
+/* On retire le soulignement du lien dans le menu pour que ce soit propre */
+nav ul li a {
+    transition: color 0.3s ease;
+}
+
+/* Petit correctif pour ton body pour éviter les problèmes de scroll */
+body {
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh; /* Utilise min-height plutôt que height fixe */
+    height: auto;
+}
