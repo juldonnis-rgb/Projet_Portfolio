@@ -14,12 +14,15 @@ body{
     background: url('background.png');
     background-repeat:no-repeat;
     background-size: cover;
-    height: 300vh;
+    min-height: 100vh;
+    height:auto;
 
     
 }
 header{
-    height: 60px;
+    height: auto;
+    flex-wrap:wrap;
+    gap:15px;
     border-radius:40px;
     background: var(--background-color);
     display: flex;
@@ -67,9 +70,12 @@ li button{
 }
 
 .photos{
+   flex:1;
     display:flex;
     height: 80vh;
     width:70vh;
+    min-width:300px;
+    max-width:500px;
     background-image: url('photo.jpg');
     background-size:cover;
     background-position: center;
@@ -78,6 +84,9 @@ li button{
     
 }
 .hero{
+    flex-direction:row;
+    flex-wrap:wrap;
+    gap:20px;
     width:auto; 
     height: auto;
     margin:20px;
@@ -86,6 +95,11 @@ li button{
     display:flex;
     justify-content: space-around;
     background: var(--background-color);
+}
+.text{
+    flex:1;
+    min-width:300px;
+
 }
 .text h2{
     color: var(--text-color);
@@ -121,14 +135,14 @@ li button{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    padding: 60px 20px;
+    padding: 20px;
     background: var(--background-color);
     margin: 20px;
     border-radius: 40px;
 }
 
 .project-card {
-    background: rgba(255, 255, 255, 0.05); /* Effet verre transparent */
+    background: rgba(255, 255, 255, 0.05); 
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 30px;
@@ -198,35 +212,32 @@ li button{
     color: #D3A03E;
 }
 
-/* Ajustement spécifique pour les cartes de compétences */
 .skill-card {
-    min-height: 350px; /* Un peu plus court que les projets */
-    cursor: default; /* On n'a pas forcément besoin de cliquer dessus */
+    min-height: 350px; 
+    cursor: default; 
 }
-
 .skill-card:hover {
     border-color: #D3A03E;
-    transform: scale(1.02); /* Un effet de zoom léger au lieu du soulèvement */
+    transform: scale(1.02); 
 }
 
-/* On retire le soulignement du lien dans le menu pour que ce soit propre */
+
 nav ul li a {
     transition: color 0.3s ease;
 }
 
-/* Petit correctif pour ton body pour éviter les problèmes de scroll */
 body {
     background: url('background.png') no-repeat center center fixed;
     background-size: cover;
-    min-height: 100vh; /* Utilise min-height plutôt que height fixe */
+    min-height: 100vh; 
     height: auto;
 }
-/* --- SECTION CONTACT --- */
+
 .contact-section {
     padding: 80px 20px;
     display: flex;
     justify-content: center;
-    background: transparent; /* Pour laisser voir le fond */
+    background: transparent; 
 }
 
 .contact-card {
@@ -286,7 +297,7 @@ body {
     transform: translateY(-3px);
 }
 
-/* --- FOOTER --- */
+
 footer {
     background: rgba(10, 10, 12, 0.9);
     padding: 40px 20px;
@@ -345,7 +356,7 @@ footer {
     opacity: 0.5;
     margin-top: 20px;
 }
-/* --- SECTION FORMULAIRE UNIQUE --- */
+
 .inquiry-section {
     padding: 40px 20px;
     display: flex;
@@ -380,7 +391,7 @@ footer {
     opacity: 0.8;
 }
 
-/* Organisation des champs */
+
 .user-inquiry-form {
     display: flex;
     flex-direction: column;
@@ -449,7 +460,6 @@ footer {
     transform: translateY(-3px);
 }
 
-/* Adaptation Mobile */
 @media (max-width: 768px) {
     .input-flex-row {
         flex-direction: column;
@@ -459,7 +469,7 @@ footer {
         padding: 25px;
     }
 }
-/* Ajoute ceci ou vérifie dans ton fichier style.css */
+
 .input-flex-row {
     display: flex;
     gap: 20px;
@@ -473,7 +483,7 @@ footer {
     flex: 1; /* Permet aux champs de prendre toute la largeur disponible */
 }
 
-/* Sur mobile, on empile tout */
+
 @media (max-width: 768px) {
     .input-flex-row {
         flex-direction: column;
