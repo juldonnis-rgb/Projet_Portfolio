@@ -12,3 +12,12 @@ Tech Stack
 -Formulaire : Intégration Formspree (AJAX)
 
 -Déploiement : GitHub Pages
+
+## 🚀 Installation et Utilisation
+
+Si vous souhaitez cloner ce projet et l'utiliser comme base pour votre propre portfolio, suivez ces étapes :
+
+### 1. Cloner le projet
+Ouvrez votre terminal et lancez la commande suivante :
+```bash
+git clone [https://github.com/juldonnis-rgb/portfolio.git](https://github.com/juldonnis-rgb/portfolio.git)
