@@ -8,5 +8,7 @@ Lien du site : 'Lien-du-site'
 Tech Stack
 
 -Front-end : HTML5, CSS3, JavaScript (Vanilla)
+
 -Formulaire : Intégration Formspree (AJAX)
+
 -Déploiement : GitHub Pages
