@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juldonnis | Développeur Web</title>
-    <head>
-    <title>Juldonnis | Développeur Web</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%232d3b4d%22/><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 fill=%22%23D3A03E%22 font-size=%2260%22 font-family=%22sans-serif%22 font-weight=%22bold%22>JR</text></svg>">
-    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="style.css">
+    <form id="my-form" action="https://formspree.io/f/xkopyvea" method="POST" class="user-inquiry-form">
+</form>
+    <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -136,42 +137,59 @@
             </div>
         </div>
     </section>
-    <section id="form-capture" class="inquiry-section">
+<section id="form-capture" class="inquiry-section">
     <div class="form-container-glass">
         <div class="form-header">
             <h3>Laissez-moi un message</h3>
             <p>Un projet, une question ou simplement envie de dire bonjour ?</p>
         </div>
 
-        <form action="#" method="POST" class="user-inquiry-form">
+        <div data-fs-success style="display:none; color: #2ecc71; margin-bottom: 20px; text-align: center; font-weight: bold;">
+            Merci ! Votre message a bien été envoyé. ✅
+        </div>
+        <div data-fs-error style="display:none; color: #e74c3c; margin-bottom: 20px; text-align: center; font-weight: bold;">
+            Oups ! Il y a eu une erreur. ❌
+        </div>
+
+        <form id="my-form" class="user-inquiry-form">
             <div class="input-flex-row">
                 <div class="field-box">
                     <label for="user-name">Nom complet</label>
-                    <input type="text" id="user-name" name="name" class="styled-entry" placeholder="Ex: Jean Dupont" required>
+                    <input type="text" id="user-name" name="name" class="styled-entry" placeholder="Ex: Jean Dupont" required data-fs-field>
+                    <span data-fs-error="name" style="color: #e74c3c; font-size: 0.8rem;"></span>
                 </div>
                 <div class="field-box">
                     <label for="user-email">Adresse Email</label>
-                    <input type="email" id="user-email" name="email" class="styled-entry" placeholder="jean@exemple.com" required>
-                </div>
-            </div>
-
-            <div class="input-flex-row">
-                <div class="field-box">
-                    <label for="user-phone">Numéro de téléphone</label>
-                    <input type="tel" id="user-phone" name="phone" class="styled-entry" placeholder="06 00 00 00 00">
+                    <input type="email" id="user-email" name="email" class="styled-entry" placeholder="jean@exemple.com" required data-fs-field>
+                    <span data-fs-error="email" style="color: #e74c3c; font-size: 0.8rem;"></span>
                 </div>
             </div>
 
             <div class="field-box">
-                <label for="user-msg">Votre message</label>
-                <textarea id="user-msg" name="message" class="styled-entry area-entry" rows="4" placeholder="Comment puis-je vous aider ?" required></textarea>
+                <label for="user-phone">Numéro de téléphone</label>
+                <input type="tel" id="user-phone" name="phone" class="styled-entry" placeholder="06 00 00 00 00" data-fs-field>
             </div>
 
-            <button type="submit" class="send-trigger">Envoyez</button>
+            <div class="field-box">
+                <label for="user-msg">Votre message</label>
+                <textarea id="user-msg" name="message" class="styled-entry area-entry" rows="4" placeholder="Comment puis-je vous aider ?" required data-fs-field></textarea>
+                <span data-fs-error="message" style="color: #e74c3c; font-size: 0.8rem;"></span>
+            </div>
+
+            <button type="submit" class="send-trigger" data-fs-submit-btn>Envoyez</button>
         </form>
     </div>
 </section>
 
+<script>
+  window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+  formspree('initForm', { 
+    formElement: '#my-form', 
+    formId: 'xkopyvea' 
+  });
+</script>
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+       
 </main> <footer>
     <div class="footer-content">
         <div class="footer-name">Juldonnis Razafimanazato</div>
@@ -183,12 +201,11 @@
     </div>
 </footer>
    
-
-        
-    
-
-
-
-    
 </body>
 </html>
+
+
+    
+    
+    
+    
