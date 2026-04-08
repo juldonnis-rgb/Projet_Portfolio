@@ -4,7 +4,7 @@ Bienvenue sur mon portfolio de développeur web. Ce site présente mes projets, 
 
 Tech Stack
 
--Front-end : HTML5, CSS3, JavaScript (Vanilla)
+-Front-end : HTML5, CSS3, JavaScript
 
 -Formulaire : Intégration Formspree (AJAX)
 
