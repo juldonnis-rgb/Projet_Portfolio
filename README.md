@@ -6,7 +6,7 @@ Tech Stack
 
 -Front-end : HTML5, CSS3, JavaScript
 
--Formulaire : Intégration Formspree (AJAX)
+-Formulaire : Intégration Formspree
 
 -Déploiement : GitHub Pages
 
