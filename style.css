@@ -37,7 +37,7 @@ li a{
     color: var(--text-color);
 }
 
-li :hover{
+.btn :hover{
     transition: all 0.3 ease-in-out;
     background-color:var(--secondary-color);
     border-radius:20px;
