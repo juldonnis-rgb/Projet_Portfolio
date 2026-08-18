@@ -13,14 +13,10 @@
 }
 
 header{
-    gap:15px;
-    border-radius:40px;
-    background: var(--background-color);
     display:flex;
     justify-content: space-between;
-    align-items: center;
-    padding:15px;
-    margin:20px;
+    border-radius:40px;
+    background: var(--background-color);
 }
 
 .nom-prénom{
