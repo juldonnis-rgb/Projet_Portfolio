@@ -36,6 +36,9 @@ li a{
     text-decoration: none;
     color: var(--text-color);
 }
+li a:hover{
+    color: var(--third-color);
+}
 
 .btn :hover{
     transition: all 0.3 ease-in-out;
