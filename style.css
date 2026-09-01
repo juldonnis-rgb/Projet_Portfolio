@@ -434,7 +434,7 @@ footer {
 
 .send-trigger:hover {
     background-color: var(--text-color);
-    color: var(--secondary-color);
+    color: var(--third-color);
     transform: translateY(-3px);
 }
 
